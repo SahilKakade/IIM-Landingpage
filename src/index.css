@@ -301,7 +301,7 @@ p {
 @media (max-width: 768px) {
   .team-member {
     flex: 1 1 100%;
-    max-width: 90%;
+    max-width: 80%;
     
   }
   
