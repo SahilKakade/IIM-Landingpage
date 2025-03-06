@@ -210,7 +210,7 @@ button:focus-visible {
   }
 
   .slider-card {
-    min-width: 100%;
+    max-width: 80%;
     background: white;
     padding: 20px;
     border-radius: 12px;
@@ -278,7 +278,7 @@ button:focus-visible {
   font-weight: 900;
   display: block;
   margin-bottom: 10px;
-  animation: bounce 1s infinite alternate;
+  
 }
 
 /* Bounce Animation */
@@ -337,8 +337,8 @@ p {
   
 }
 .member-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%; /* Makes it circular */
   object-fit: cover;
   margin-bottom: 10px;
