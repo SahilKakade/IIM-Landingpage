@@ -5,6 +5,7 @@ import SuccessStories from "./components/SuccessStories"; // Import Success Stor
 import Team from "./components/teamMembers"; 
 import Form from "./components/Form";
 import Process from "./components/Process";
+import MobileProcess from "./components/MobileProcess";
 
 const LandingPage = () => {
   return (
@@ -58,6 +59,10 @@ const LandingPage = () => {
       <section >
         
         <Process />
+      </section>
+      <section >
+        
+        <MobileProcess />
       </section>
       <section >
         

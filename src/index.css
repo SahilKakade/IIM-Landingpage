@@ -246,7 +246,10 @@ button:focus-visible {
   .features-wrapper {
     display: none;
   }
-
+  .process-container {
+    
+    display: none;
+}
   .mobile-slider {
     display: flex;
     width: 100%;
@@ -599,5 +602,88 @@ p {
   .process-block {
     min-width: 35%;
     scroll-snap-align: center;
+  }
+}
+
+
+
+.mobile-process-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.mobile-process-heading {
+ font-size: 28px;
+  margin-bottom: 10px;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.mobile-process-slider {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.mobile-process-step {
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  
+ 
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.mobile-process-step.active {
+  opacity: 1;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  font-family: 'Inter Tight', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .mobile-process-container {
+    display: none;
   }
 }

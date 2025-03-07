@@ -12,8 +12,15 @@ const Process = () => {
   ];
 
   const [highlighted, setHighlighted] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sliderRef = useRef(null);
-  const isMobile = window.innerWidth <= 768;
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (!isMobile) {
@@ -22,7 +29,7 @@ const Process = () => {
       }, 3000);
       return () => clearInterval(interval);
     }
-  }, [isMobile]);
+  }, [isMobile, steps.length]);
 
   return (
     <div className="process-container">
