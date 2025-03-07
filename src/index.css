@@ -188,6 +188,7 @@ button:focus-visible {
 .feature-description {
   font-size: 14px;
   color: #666;
+  text-align: left;
 }
 .mobile-slider {
   display: none;
@@ -338,8 +339,8 @@ p {
   
 }
 .member-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%; /* Makes it circular */
   object-fit: fill;
   margin-bottom: 10px;

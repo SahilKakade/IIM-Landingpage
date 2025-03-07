@@ -7,22 +7,34 @@ const features = [
   {
     icon: <User size={40} className="icon" />, 
     title: "Personalized", 
-    description: "Custom AI-driven study plans based on your progress. Mentoring by IIM alumni with real-world insights."
+    description: [
+      "Custom AI-driven study plans based on your progress.",
+      "Mentoring by IIM alumni with real-world insights."
+    ]
   },
   {
     icon: <Puzzle size={40} className="icon" />, 
     title: "Modular", 
-    description: "Focus on your strengths with tailored modules. Selective module options to enhance your learning experience."
+    description: [
+      "Focus on your strengths with tailored modules.",
+      "Selective module options to enhance your learning experience."
+    ]
   },
   {
     icon: <Clock size={40} className="icon" />, 
     title: "Self-paced, Concept-based", 
-    description: "Learn at your own speed. Flexible learning schedule."
+    description: [
+      "Learn at your own speed.",
+      "Flexible learning schedule."
+    ]
   },
   {
     icon: <GraduationCap size={40} className="icon" />, 
     title: "Mentorship-based", 
-    description: "Weekly or bi-weekly reviews to track progress. Exclusive strategies from those who’ve been through it all."
+    description: [
+      "Weekly or bi-weekly reviews to track progress.",
+      "Exclusive strategies from those who’ve been through it all."
+    ]
   }
 ];
 
@@ -52,7 +64,11 @@ const WhyUs = () => {
             >
               <div className="icon-container">{feature.icon}</div>
               <h3 className="feature-title">{feature.title}</h3>
-              <p className="feature-description">{feature.description}</p>
+              <ul className="feature-description">
+                {feature.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
@@ -69,7 +85,11 @@ const WhyUs = () => {
             >
               <div className="icon-container">{features[currentIndex].icon}</div>
               <h3 className="feature-title">{features[currentIndex].title}</h3>
-              <p className="feature-description">{features[currentIndex].description}</p>
+              <ul className="feature-description">
+                {features[currentIndex].description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </motion.div>
           </AnimatePresence>
         </div>
