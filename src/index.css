@@ -374,8 +374,9 @@ p {
 }
 
 .form-box input {
-  width: 80%;
+  width: 94.5%;
   padding: 10px;
+  background-color: #fff;
   margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
