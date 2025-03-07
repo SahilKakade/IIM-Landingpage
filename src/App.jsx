@@ -11,12 +11,17 @@ const LandingPage = () => {
     <div className="landing-page">
       {/* ✅ Banner Section */}
       <section className="banner-section">
-        <div className="banner-overlay">
-          <h1 className="banner-title">
-            Welcome to <span className="highlight-text">IIMpossible</span>
-          </h1>
-        </div>
-      </section>
+  <img
+    className="banner-image"
+    src="https://cdn.shopify.com/s/files/1/0664/8292/9891/files/Web_banner_1.png?v=1741353718"
+    alt="Banner"
+  />
+  <div className="banner-overlay">
+    <h1 className="banner-title"></h1>
+  </div>
+</section>
+
+
 
       {/* ✅ Description Section */}
       <section className="description-section">
