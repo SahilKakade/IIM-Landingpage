@@ -198,9 +198,10 @@ button:focus-visible {
   }
 
   .mobile-slider {
-    display: block;
+    display: flex;
     width: 100%;
     overflow: hidden;
+    justify-content: center;
     position: relative;
   }
 
