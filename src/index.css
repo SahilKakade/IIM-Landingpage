@@ -264,7 +264,7 @@ button:focus-visible {
     width: 400px;
     background: white;
     padding: 20px;
-    height:200px;
+    height:300px;
     border-radius: 12px;
     border:1px solid #ff1205;
     text-align: center;
@@ -565,7 +565,7 @@ p {
 }
 
 .step-text {
-  font-size: 14px;
+  font-size: 20px;
   font-family: 'Inter Tight', sans-serif;
   margin-top: 20px;
   line-height:1.1;
