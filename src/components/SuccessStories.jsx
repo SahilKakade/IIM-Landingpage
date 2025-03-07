@@ -12,7 +12,7 @@ const SuccessStories = () => {
 
   return (
     <div className={`success-stories ${isVisible ? "fade-in" : ""}`}>
-      <h2 className="heading">Success Stories</h2>
+      
       <div className="stories-container">
         <div className="story left">
           <span className="big-highlight bounce">75%</span>

@@ -29,7 +29,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <section className="team-section">
-      <h2 className="team-title">The Team</h2>
+      <h2 className="section-title">The Team</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
