@@ -3,7 +3,8 @@ import React from "react";
 import WhyUs from "./components/WhyUs"; // Import Success Stories component
 import SuccessStories from "./components/SuccessStories"; // Import Success Stories component
 import Team from "./components/teamMembers"; 
-import Form from "./components/Form"; 
+import Form from "./components/form";
+
 const LandingPage = () => {
   return (
     <div className="landing-page">
