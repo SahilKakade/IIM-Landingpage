@@ -1,4 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trap:wght@400;600;700&display=swap');
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600; /* Semibold */
+  font-family: 'Trap', sans-serif;
+  color: #333;
+  margin-bottom: 30px;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -117,28 +128,49 @@ button:focus-visible {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  font-family: 'Trap', sans-serif;
+  color:#000000;
+  margin-bottom: 3rem;
+  text-transform:uppercase;
 }
 
 .highlight-red {
-  color: #840000;
+  color: #ff1205;
 }
 
 .section-text {
   font-size: 1.125rem;
-  
+  width:80%;
   margin: 0 auto;
-  line-height: 1.6;
-  color: #555;
+  line-height: 1.1;
+  color: #000000;
 }
-
+.section-text-2 {
+  font-size: 1.5rem;
+  width:80%;
+  font-family: 'Inter Tight', sans-serif;
+  margin: 15px auto;
+  line-height: 1.1;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .section-text {
+    
+    width:100%;
+    
+  }
+  .section-text-2 {
+    
+    width:100%;
+    
+  }}
 /* ✅ Success Stories Section */
 
 .why-us-section {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  
   text-align: center;
 }
 
@@ -147,12 +179,7 @@ button:focus-visible {
   margin: 0 auto;
 }
 
-.section-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-}
+
 
 .features-wrapper {
   display: flex;
@@ -165,7 +192,7 @@ button:focus-visible {
   background: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ff1205;
   text-align: center;
   width: 250px;
   transition: transform 0.3s ease-in-out;
@@ -178,17 +205,22 @@ button:focus-visible {
 .icon-container {
   margin-bottom: 15px;
 }
+.icon {
+  color: #ff1205;
+}
 
 .feature-title {
   font-size: 18px;
   font-weight: bold;
-  color: #444;
+  color: #000000;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .feature-description {
   font-size: 14px;
-  color: #666;
+  color: #000000;
   text-align: left;
+  font-family: 'Inter Tight', sans-serif;
 }
 .mobile-slider {
   display: none;
@@ -217,7 +249,7 @@ button:focus-visible {
     padding: 20px;
     height:200px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border:1px solid #ff1205;
     text-align: center;
   }
 }
@@ -242,10 +274,10 @@ button:focus-visible {
 
 /* Heading */
 .heading {
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 40px;
+  
   margin-bottom: 25px;
-  color: #333;
+  color: #ff1205;
   letter-spacing: 1px;
 }
 
@@ -260,10 +292,11 @@ button:focus-visible {
 .story {
   width: 45%;
   font-size: 20px;
-  font-weight: bold;
-  color: #666;
+
+  color: #000000;
   text-align: center;
-  
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: normal;
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
@@ -276,10 +309,11 @@ button:focus-visible {
 
 /* Animated Numbers */
 .big-highlight {
-  color: #840000;
-  font-size: 52px;
-  font-weight: 900;
+  color: #ff1205;
+  font-size: 180px;
+  font-weight: 600;
   display: block;
+  font-family: 'Trap', sans-serif;
   margin-bottom: 10px;
   
 }
@@ -297,7 +331,7 @@ button:focus-visible {
 /* Paragraph Text */
 p {
   margin: 0;
-  font-size: 18px;
+ 
 }
 @media (max-width: 768px) {
   .stories-container {
@@ -318,7 +352,7 @@ p {
 }
 .team-section{
   padding: 50px 0;
-  background-color: #f9f9f9;
+  
 }
 
 .team-member {
@@ -326,8 +360,8 @@ p {
   max-width: 28%;
   background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  border: 1px solid #ff1205;;
   text-align: center;
 }
 
@@ -339,9 +373,31 @@ p {
   }
   
 }
+.member-name{
+  font-family: 'Inter Tight', sans-serif;
+  color:#000000;
+  font-size:22px;
+  font-weight:600;
+}
+.member-title{
+  font-family: 'Inter Tight', sans-serif;
+  color:#000000;
+  font-size:20px;
+  font-weight:500;
+}
+.member-description{
+  font-family: 'Inter Tight', sans-serif;
+  color:#000000;
+  font-size:14px;
+  font-weight:400;
+  margin:20px 0;
+}
+
+
 .member-image {
   width: 150px;
   height: 150px;
+  border: 1px solid #ff1205;
   border-radius: 50%; /* Makes it circular */
   object-fit: fill;
   margin-bottom: 10px;

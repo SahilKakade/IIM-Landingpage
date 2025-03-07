@@ -62,8 +62,9 @@ const WhyUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="icon-container">{feature.icon}</div>
+              
               <h3 className="feature-title">{feature.title}</h3>
+              <div className="icon-container">{feature.icon}</div>
               <ul className="feature-description">
                 {feature.description.map((point, i) => (
                   <li key={i}>{point}</li>

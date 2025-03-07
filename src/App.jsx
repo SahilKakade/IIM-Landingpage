@@ -20,16 +20,16 @@ const LandingPage = () => {
       {/* ✅ Description Section */}
       <section className="description-section">
         <h2 className="section-title">
-          About <span className="highlight-red">US</span>
+          About US
         </h2>
         <p className="section-text">
-          IIM Possible is a personalized, AI-driven CAT coaching program that
+          IIM Possible is a <span className="highlight-red">personalized, AI-driven CAT coaching program</span>  that
           helps students optimize performance with a specialized approach. From
           a unique screening test that identifies strengths and weaknesses to a
           modular, self-paced learning strategy, every student receives only the
           coaching they need.
         </p>
-        <p className="section-text">
+        <p className="section-text-2">
           Our methodology focuses on concept-based modules, interactive
           practice, and dedicated mentorship from IIM alumni to boost success
           and confidence.
