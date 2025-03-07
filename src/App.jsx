@@ -60,10 +60,10 @@ const LandingPage = () => {
         
         <Process />
       </section>
-      <section >
+      {/* <section >
         
         <MobileProcess />
-      </section>
+      </section> */}
       <section >
         
         <Team />
