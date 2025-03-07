@@ -20,7 +20,7 @@ const LandingPage = () => {
       {/* ✅ Description Section */}
       <section className="description-section">
         <h2 className="section-title">
-          IIM <span className="highlight-red">Possible</span>
+          About <span className="highlight-red">US</span>
         </h2>
         <p className="section-text">
           IIM Possible is a personalized, AI-driven CAT coaching program that
