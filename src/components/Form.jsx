@@ -36,7 +36,7 @@ const Form = () => {
     <div className="form-container">
       {!submitted ? (
         <form className="form-box">
-          <h2>Join Us</h2>
+         <h2 className="section-title">Join Us</h2>
           <input
             type="text"
             name="name"
