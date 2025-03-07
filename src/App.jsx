@@ -4,6 +4,7 @@ import WhyUs from "./components/WhyUs"; // Import Success Stories component
 import SuccessStories from "./components/SuccessStories"; // Import Success Stories component
 import Team from "./components/teamMembers"; 
 import Form from "./components/Form";
+import Process from "./components/Process";
 
 const LandingPage = () => {
   return (
@@ -45,6 +46,10 @@ const LandingPage = () => {
       <section >
         
         <SuccessStories />
+      </section>
+      <section >
+        
+        <Process />
       </section>
       <section >
         
