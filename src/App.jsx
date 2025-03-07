@@ -10,16 +10,19 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       {/* ✅ Banner Section */}
-      <section className="banner-section">
-  <img
-    className="banner-image"
-    src="https://cdn.shopify.com/s/files/1/0664/8292/9891/files/Web_banner_1.png?v=1741353718"
-    alt="Banner"
-  />
-  <div className="banner-overlay">
-    <h1 className="banner-title"></h1>
-  </div>
-</section>
+      <a href="https://iimpossible.in" target="_blank" rel="noopener noreferrer">
+  <section className="banner-section">
+    <img
+      className="banner-image"
+      src="https://cdn.shopify.com/s/files/1/0664/8292/9891/files/Web_banner_1.png?v=1741353718"
+      alt="Banner"
+    />
+    <div className="banner-overlay">
+      <h1 className="banner-title"></h1>
+    </div>
+  </section>
+</a>
+
 
 
 
@@ -35,7 +38,7 @@ const LandingPage = () => {
           modular, self-paced learning strategy, every student receives only the
           coaching they need.
         </p>
-        <p className="section-text-2">
+        <p className="section-text">
           Our methodology focuses on concept-based modules, interactive
           practice, and dedicated mentorship from IIM alumni to boost success
           and confidence.

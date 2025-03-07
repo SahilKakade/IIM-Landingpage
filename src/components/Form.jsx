@@ -62,8 +62,9 @@ const Form = () => {
             required
           />
           <div className="btn-group">
-            <button onClick={(e) => handleSubmit(e, "Mentorship")}>Mentorship Signup</button>
-            <button onClick={(e) => handleSubmit(e, "Study Plan")}>Get Study Plan</button>
+            <button onClick={(e) => handleSubmit(e, "Mentorship")}>Free 15 min mentorship session
+            </button>
+            <button onClick={(e) => handleSubmit(e, "Study Plan")}>Free personalised study plan</button>
           </div>
         </form>
       ) : (
