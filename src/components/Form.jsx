@@ -13,7 +13,6 @@ const Form = () => {
   const handleSubmit = async (e, type) => {
     e.preventDefault();
     try {
-      // Add data to Firestore
       await addDoc(collection(db, "formResponses"), {
         name: formData.name,
         email: formData.email,
@@ -24,7 +23,6 @@ const Form = () => {
 
       console.log("Data submitted:", { ...formData, type });
 
-      // Simulate animation effect
       setAnimation(true);
       setTimeout(() => {
         setSubmitted(true);
@@ -58,20 +56,20 @@ const Form = () => {
           <input
             type="tel"
             name="contact"
-            placeholder="Contact No"
+            placeholder="Contact No."
             value={formData.contact}
             onChange={handleChange}
             required
           />
           <div className="btn-group">
-            <button onClick={(e) => handleSubmit(e, "Signup")}>Sign Up</button>
-            <button onClick={(e) => handleSubmit(e, "Free Trial")}>Get a Free Trial</button>
+            <button onClick={(e) => handleSubmit(e, "Mentorship")}>Mentorship Signup</button>
+            <button onClick={(e) => handleSubmit(e, "Study Plan")}>Get Study Plan</button>
           </div>
         </form>
       ) : (
         <div className={`thank-you ${animation ? "fade-in" : ""}`}>
-          <h2>Thank you!</h2>
-          <p>We will get back to you soon.</p>
+          <h2>Thank You!</h2>
+          <p>We'll be in touch soon.</p>
         </div>
       )}
     </div>

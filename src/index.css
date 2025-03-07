@@ -346,31 +346,36 @@ p {
   margin-bottom: 10px;
 }
 /* Form Styling */
+
+/* Form Styling */
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f4f4f4;
+  height: 70vh;
+  background: #fff;
+  padding: 20px;
 }
 
 .form-box {
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
 }
 
 .form-box h2 {
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .form-box input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -378,6 +383,7 @@ p {
 .btn-group {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .btn-group button {
@@ -388,6 +394,7 @@ p {
   border-radius: 5px;
   font-size: 14px;
   color: #fff;
+  transition: background 0.3s;
 }
 
 .btn-group button:first-child {
@@ -399,7 +406,7 @@ p {
 }
 
 .btn-group button:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* Thank You Animation */
@@ -421,3 +428,5 @@ p {
     transform: translateY(0);
   }
 }
+
+
