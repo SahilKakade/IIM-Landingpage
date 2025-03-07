@@ -227,14 +227,14 @@ button:focus-visible {
 }
 
 .feature-title {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   color: #000000;
   font-family: 'Inter Tight', sans-serif;
 }
 
 .feature-description {
-  font-size: 14px;
+  font-size: 18px;
   color: #000000;
   text-align: left;
   font-family: 'Inter Tight', sans-serif;
@@ -441,10 +441,6 @@ p {
   text-align: center;
 }
 
-.form-box h2 {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
 
 .form-box input {
   width: 94.5%;
@@ -589,10 +585,19 @@ p {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 10px;
+    
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 11 */
+  }
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  .process-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .process-block {
-    min-width: 80%;
+    min-width: 35%;
     scroll-snap-align: center;
   }
 }
