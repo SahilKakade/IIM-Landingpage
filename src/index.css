@@ -341,6 +341,6 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%; /* Makes it circular */
-  object-fit: cover;
+  object-fit: fill;
   margin-bottom: 10px;
 }
