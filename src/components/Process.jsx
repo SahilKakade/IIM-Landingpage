@@ -6,8 +6,8 @@ const Process = () => {
     "Technology driven screening test - to help understand a student’s strengths and weaknesses",
     "Personalised study plan",
     "Live online classes (need based) with recorded backups",
-    "Individual Doubt clearing sessions",
-    "Weekly/Biweekly mentorship session to track progress",
+    "Individual doubt clearing sessions",
+    "Weekly/Bi-weekly mentorship session to track progress",
     "Strategic alterations in the study plan to score 99+ percentile",
   ];
 

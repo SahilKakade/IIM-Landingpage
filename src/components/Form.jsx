@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { db, collection, addDoc } from "../firebase";
 
 const Form = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", contact: "", status: "1st Timer" });
+  const [formData, setFormData] = useState({ name: "", email: "", contact: "", status: "No" });
   const [submitted, setSubmitted] = useState(false);
   const [animation, setAnimation] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "radio" ? (checked ? value : formData[name]) : value
+    });
   };
 
   const handleSubmit = async (e, type) => {
@@ -17,7 +21,7 @@ const Form = () => {
         name: formData.name,
         email: formData.email,
         contact: formData.contact,
-        status: formData.status,
+        status: formData.status === "Yes" ? "Retaker" : "1st Timer",
         type,
         timestamp: new Date(),
       });
@@ -62,15 +66,35 @@ const Form = () => {
             onChange={handleChange}
             required
           />
-          <select
-            name="status"
-            value={formData.status}
-            onChange={handleChange}
-            required
-          >
-            <option value="1st Timer">1st Timer</option>
-            <option value="Retaker">Retaker</option>
-          </select>
+
+<div className="radio-group">
+  <p>Attempted CAT Before?</p>
+  <div className="radio-options">
+    <label>
+      <input
+        type="radio"
+        name="status"
+        value="Retaker"
+        checked={formData.status === "Retaker"}
+        onChange={handleChange}
+      />
+      Yes
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="status"
+        value="1st Timer"
+        checked={formData.status === "1st Timer"}
+        onChange={handleChange}
+      />
+      No
+    </label>
+  </div>
+</div>
+
+
+
           <div className="btn-group">
             <button onClick={(e) => handleSubmit(e, "Mentorship")}>Free 15 min mentorship session</button>
             <button onClick={(e) => handleSubmit(e, "Study Plan")}>Free personalised study plan</button>

@@ -165,7 +165,7 @@ button:focus-visible {
 
 .section-text {
   font-size: 1.125rem;
-  width:80%;
+  width:90%;
   margin: 0 auto;
   line-height: 1.4;
   color: #000000;
@@ -532,6 +532,58 @@ p {
   outline: none;
 }
 
+/* Radio Button Styling */
+/* Radio Button Styling */
+.radio-group {
+  margin-bottom: 20px;
+  font-family: 'Inter Tight', sans-serif;
+  text-align: left;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 14px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 8px;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: #ff1205;
+  background-color: #ff1205;
+}
+
+.radio-group input[type="radio"]:checked::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: 2px;
+}
+
+/* Flex styling to align labels side by side */
+.radio-group .radio-options {
+  display: flex;
+  align-items: center;
+}
 
 
 .process-container {

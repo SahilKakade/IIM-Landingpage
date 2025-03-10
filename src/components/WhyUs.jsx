@@ -4,7 +4,7 @@ import "../index.css";
 
 const features = [
   {
-    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/personalized.jpg?v=1741596509",
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/personalized.jpg?v=1741600788",
     title: "Personalized", 
     description: [
       "Custom AI-driven study plans based on your progress.",
@@ -28,7 +28,7 @@ const features = [
     ]
   },
   {
-    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/mentorship.jpg?v=1741596739",
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/mentorship.jpg?v=1741601034",
     title: "Mentorship-based", 
     description: [
       "Weekly or bi-weekly reviews to track progress.",
