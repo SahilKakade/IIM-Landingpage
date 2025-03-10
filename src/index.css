@@ -252,6 +252,9 @@ button:focus-visible {
   .features-wrapper {
     display: none;
   }
+  .feature-title {
+    margin:10px;
+  }
   .process-container {
     
     display: none;
