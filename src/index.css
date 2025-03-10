@@ -121,10 +121,16 @@ button:focus-visible {
 /* Change the banner image for mobile view */
 @media (max-width: 768px) {
   .banner-image {
-    content: url("https://cdn.shopify.com/s/files/1/0664/8292/9891/files/IIM_Possible_Mobile_Banner.png?v=1741353719");
+    content: url("https://cdn.shopify.com/s/files/1/0664/8292/9891/files/IIM_Possible_Mobile_Banner.jpg?v=1741595659");
   }
 }
+.feature-image {
+  width: 250px;
+    height: 180px;
+  object-fit: contain;
 
+  border-radius: 8px;
+}
 
 
 

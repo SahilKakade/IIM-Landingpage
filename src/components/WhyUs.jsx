@@ -1,11 +1,10 @@
-import { User, Puzzle, Clock, GraduationCap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import "../index.css";
 
 const features = [
   {
-    icon: <User size={40} className="icon" />, 
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/personalized.jpg?v=1741596509",
     title: "Personalized", 
     description: [
       "Custom AI-driven study plans based on your progress.",
@@ -13,7 +12,7 @@ const features = [
     ]
   },
   {
-    icon: <Puzzle size={40} className="icon" />, 
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/Modular.jpg?v=1741596619",
     title: "Modular", 
     description: [
       "Focus on your strengths with tailored modules.",
@@ -21,7 +20,7 @@ const features = [
     ]
   },
   {
-    icon: <Clock size={40} className="icon" />, 
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/self_paced.jpg?v=1741596680",
     title: "Self-paced, Concept-based", 
     description: [
       "Learn at your own speed.",
@@ -29,7 +28,7 @@ const features = [
     ]
   },
   {
-    icon: <GraduationCap size={40} className="icon" />, 
+    image: "https://cdn.shopify.com/s/files/1/0664/8292/9891/files/mentorship.jpg?v=1741596739",
     title: "Mentorship-based", 
     description: [
       "Weekly or bi-weekly reviews to track progress.",
@@ -62,9 +61,8 @@ const WhyUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
             >
-              
+              <img src={feature.image} alt={feature.title} className="feature-image" />
               <h3 className="feature-title">{feature.title}</h3>
-              <div className="icon-container">{feature.icon}</div>
               <ul className="feature-description">
                 {feature.description.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -84,7 +82,7 @@ const WhyUs = () => {
               exit={{ x: "-100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 0.5 }}
             >
-              <div className="icon-container">{features[currentIndex].icon}</div>
+              <img src={features[currentIndex].image} alt={features[currentIndex].title} className="feature-image" />
               <h3 className="feature-title">{features[currentIndex].title}</h3>
               <ul className="feature-description">
                 {features[currentIndex].description.map((point, i) => (

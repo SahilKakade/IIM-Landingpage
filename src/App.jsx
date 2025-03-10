@@ -15,7 +15,7 @@ const LandingPage = () => {
   <section className="banner-section">
     <img
       className="banner-image"
-      src="https://cdn.shopify.com/s/files/1/0664/8292/9891/files/Web_banner_1.png?v=1741353718"
+      src="https://cdn.shopify.com/s/files/1/0664/8292/9891/files/IIM_Possible_Web_Banner.jpg?v=1741595659"
       alt="Banner"
     />
     <div className="banner-overlay">
