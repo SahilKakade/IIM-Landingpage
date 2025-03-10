@@ -268,7 +268,15 @@ button:focus-visible {
     display: flex;
     width: 400%;
   }
-
+  .feature-image {
+    width: 150px;
+      height: 107px;
+    object-fit: contain;
+  
+    border-radius: 8px;
+  }
+  
+  
   .slider-card {
     width: 400px;
     background: white;
@@ -277,6 +285,7 @@ button:focus-visible {
     border-radius: 12px;
     border:1px solid #ff1205;
     text-align: center;
+    margin:0 20px;
   }
 }
 
