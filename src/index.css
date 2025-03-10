@@ -252,13 +252,15 @@ button:focus-visible {
   .features-wrapper {
     display: none;
   }
+
   .feature-title {
-    margin:10px;
+    margin: 2.5%;
   }
+
   .process-container {
-    
     display: none;
-}
+  }
+
   .mobile-slider {
     display: flex;
     width: 100%;
@@ -271,24 +273,23 @@ button:focus-visible {
     display: flex;
     width: 400%;
   }
+
   .feature-image {
-    width: 150px;
-      height: 107px;
+    width: 40vw;
+    height: 28.5vw;
     object-fit: contain;
-  
     border-radius: 8px;
   }
-  
-  
+
   .slider-card {
-    width: 400px;
+    width: 90vw;
     background: white;
-    padding: 20px;
-    height:300px;
+    padding: 5%;
+    height: 55vh;
     border-radius: 12px;
-    border:1px solid #ff1205;
+    border: 1px solid #ff1205;
     text-align: center;
-    margin:0 20px;
+    margin: 0 5vw;
   }
 }
 
