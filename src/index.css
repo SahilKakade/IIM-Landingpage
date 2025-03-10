@@ -448,15 +448,13 @@ p {
 .form-box input {
   width: 94.5%;
   padding: 10px;
+  color: black;
   background-color: #fff;
   margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.form-box input:focus  {
-  border-color: #ff1205;
-  outline: none;
-}
+
 
 .btn-group {
   display: flex;
@@ -524,7 +522,7 @@ p {
 }
 
 .form-box select:focus {
-  border-color: #ff1205;
+  border-color: #ccc;
   outline: none;
 }
 
