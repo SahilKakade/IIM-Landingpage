@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const steps = [
-  { step: 1, title: "AI driven screening test To help understand a student’s strengths and weaknesses", description: "" },
+  { step: 1, title: "Technology driven screening test To help understand a student’s strengths and weaknesses", description: "" },
   { step: 2, title: "Personalised study plan", description: "" },
   { step: 3, title: "Live online classes (need based) with recorded backups", description: "" },
-  { step: 4, title: "Weekly 1 on 1 mentorship session To track progress", description: "" },
-  { step: 5, title: "Doubt clearing sessions", description: "" },
+  { step: 4, title: "Doubt clearing sessions", description: "" },
+  { step: 5, title: "Weekly/Biweekly mentorship session To track progress", description: "" },
   { step: 6, title: "Strategic alterations in the study plan To score 99%ile", description: "" },
 ];
 

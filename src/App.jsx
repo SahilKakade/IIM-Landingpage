@@ -33,7 +33,7 @@ const LandingPage = () => {
           About US
         </h2>
         <p className="section-text">
-          IIM Possible is a <span className="highlight-red">personalized, AI-driven CAT coaching program</span>  that
+          IIM Possible is a <span className="highlight-red">personalized, CAT coaching program backed by technology</span>  that
           helps students optimize performance with a specialized approach. From
           a unique screening test that identifies strengths and weaknesses to a
           modular, self-paced learning strategy, every student receives only the

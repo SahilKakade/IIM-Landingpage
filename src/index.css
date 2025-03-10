@@ -166,7 +166,7 @@ button:focus-visible {
 }
 .section-text-2 {
   font-size: 1.5rem;
-  width:80%;
+  width:90%;
   font-family: 'Inter Tight', sans-serif;
   margin: 15px auto;
   line-height: 1.1;
@@ -330,7 +330,7 @@ button:focus-visible {
 /* Animated Numbers */
 .big-highlight {
   color: #ff1205;
-  font-size: 180px;
+  font-size: 130px;
   font-weight: 600;
   display: block;
   font-family: 'Trap', sans-serif;
@@ -453,6 +453,10 @@ p {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+.form-box input:focus  {
+  border-color: #ff1205;
+  outline: none;
+}
 
 .btn-group {
   display: flex;
@@ -503,6 +507,25 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* Dropdown Styling */
+.form-box select {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.form-box select:focus {
+  border-color: #ff1205;
+  outline: none;
 }
 
 

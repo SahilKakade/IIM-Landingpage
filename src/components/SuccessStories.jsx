@@ -16,7 +16,7 @@ const SuccessStories = () => {
       <div className="stories-container">
         <div className="story left">
           <span className="big-highlight bounce">75%</span>
-          <p>of our students achieved a <br></br>99th %ile score!</p>
+          <p>of our students achieved a <br></br>99+ percentile score!</p>
         </div>
         <div className="story right">
           <span className="big-highlight bounce">45%</span>

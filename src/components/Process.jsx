@@ -3,12 +3,12 @@ import "../index.css";
 
 const Process = () => {
   const steps = [
-    "AI driven screening test - to help understand a student’s strengths and weaknesses",
+    "Technology driven screening test - to help understand a student’s strengths and weaknesses",
     "Personalised study plan",
     "Live online classes (need based) with recorded backups",
-    "Weekly 1 on 1 mentorship session to track progress",
-    "Doubt clearing sessions",
-    "Strategic alterations in the study plan to score 99%ile",
+    "Individual Doubt clearing sessions",
+    "Weekly/Biweekly mentorship session to track progress",
+    "Strategic alterations in the study plan to score 99+ percentile",
   ];
 
   const [highlighted, setHighlighted] = useState(0);

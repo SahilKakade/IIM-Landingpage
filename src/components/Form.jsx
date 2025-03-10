@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { db, collection, addDoc } from "../firebase";
 
 const Form = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", contact: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", contact: "", status: "1st Timer" });
   const [submitted, setSubmitted] = useState(false);
   const [animation, setAnimation] = useState(false);
 
@@ -17,6 +17,7 @@ const Form = () => {
         name: formData.name,
         email: formData.email,
         contact: formData.contact,
+        status: formData.status,
         type,
         timestamp: new Date(),
       });
@@ -36,7 +37,7 @@ const Form = () => {
     <div className="form-container">
       {!submitted ? (
         <form className="form-box">
-         <h2 className="section-title">Join Us</h2>
+          <h2 className="section-title">Join Us</h2>
           <input
             type="text"
             name="name"
@@ -61,9 +62,17 @@ const Form = () => {
             onChange={handleChange}
             required
           />
+          <select
+            name="status"
+            value={formData.status}
+            onChange={handleChange}
+            required
+          >
+            <option value="1st Timer">1st Timer</option>
+            <option value="Retaker">Retaker</option>
+          </select>
           <div className="btn-group">
-            <button onClick={(e) => handleSubmit(e, "Mentorship")}>Free 15 min mentorship session
-            </button>
+            <button onClick={(e) => handleSubmit(e, "Mentorship")}>Free 15 min mentorship session</button>
             <button onClick={(e) => handleSubmit(e, "Study Plan")}>Free personalised study plan</button>
           </div>
         </form>
